@@ -1,6 +1,7 @@
 export * from "./types";
 export * from "./diagram";
 export * from "./marker-shape";
+export * from "./hyperlink";
 export * from "./photo";
 export * from "./ellipsoids";
 export * from "./geojson-z";
@@ -122,3 +123,11 @@ export {
   resolveThreeDTilesRequestHeaders,
   stripGoogleMapsApiKeyHeader,
 } from "./three-d-tiles";
+export {
+  PROJECT_CREDENTIAL_FIELDS,
+  redactCredentials,
+  redactProjectCredentials,
+  redactUrlCredentials,
+  type CredentialRedactionResult,
+} from "./credentials";
+export { excludeHiddenFieldsFromGeojson, excludeHiddenFieldsFromProject } from "./visibility";
